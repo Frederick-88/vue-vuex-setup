@@ -1,0 +1,81 @@
+module.exports = {
+  root: true,
+  env: {
+    node: true,
+  },
+  extends: [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:vue/strongly-recommended",
+    "plugin:import/recommended",
+    "prettier/vue",
+  ],
+  plugins: ["vue", "prettier"],
+  rules: {
+    "prettier/prettier": [
+      "error",
+      {
+        semi: false,
+        tabWidth: 2,
+        arrowParens: "always",
+      },
+    ],
+    semi: 0,
+    "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
+    eqeqeq: 2,
+    "no-undef": 0,
+    "no-underscore-dangle": 0,
+    "no-unused-vars": 0,
+    "no-mixed-operators": [
+      1,
+      {
+        allowSamePrecedence: true,
+      },
+    ],
+    "no-plusplus": 0,
+    "eol-last": 2,
+    "no-confusing-arrow": 0,
+    "arrow-parens": 2,
+    "arrow-spacing": [
+      "error",
+      {
+        before: true,
+        after: true,
+      },
+    ],
+    "arrow-body-style": 2,
+    "no-param-reassign": 0,
+    "prefer-template": 0,
+    "prefer-promise-reject-errors": 0,
+    "no-script-url": 0,
+    "no-unused-expressions": 0,
+    "import/prefer-default-export": 0,
+    "import/no-useless-path-segments": 1,
+    "import/no-unresolved": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-named-as-default": 0,
+    "import/no-duplicates": 2,
+    "import/order": [
+      2,
+      {
+        groups: [
+          "builtin",
+          "external",
+          "unknown",
+          "parent",
+          "sibling",
+          "index",
+        ],
+        "newlines-between": 2,
+      },
+    ],
+    "import/newline-after-import": 1,
+    "import/no-named-as-default-member": 0,
+    "import/namespace": 0,
+    "import/named": 0,
+  },
+  parserOptions: {
+    parser: "babel-eslint",
+  },
+}

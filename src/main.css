@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input {
+  padding: 5px;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#app {
+  min-height: 100vh;
+  padding: 15px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.button-theme {
+  float: right;
+}
+
+.form {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 15px;
+  padding: 15px;
+  background-color: #ddd;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.form label {
+  display: block;
+  font-weight: bold;
+}
+
+.filter {
+  text-align: center;
+}
+
+.filter button.active {
+  background-color: cyan;
+  color: black;
+}
+
+.completed {
+  opacity: 0.5;
+}
+
+.todo-actions {
+  text-align: right;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode button {
+  background-color: yellow;
+}
+
+.dark-mode .form {
+  background-color: #666;
+}
